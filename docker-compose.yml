@@ -24,10 +24,10 @@ services:
       context: .
     depends_on:
       postgres:
-        condition: service_healthy
+        condition: service_healthy # waiting until heathcheck of postgres is good
     ports:
       - "3000:3000"
 
 volumes:
-  dbdata:
+  dbdata: # persist database
             
