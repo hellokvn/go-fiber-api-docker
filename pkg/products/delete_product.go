@@ -1,4 +1,4 @@
-package books
+package products
 
 import (
 	"go-fiber-api-docker/pkg/common/models"
@@ -6,17 +6,17 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func (h handler) DeleteBook(c *fiber.Ctx) error {
+func (h handler) DeleteProduct(c *fiber.Ctx) error {
 	id := c.Params("id")
 
-	var book models.Book
+	var product models.Product
 
-	if result := h.DB.First(&book, id); result.Error != nil {
+	if result := h.DB.First(&product, id); result.Error != nil {
 		return fiber.NewError(fiber.StatusNotFound, result.Error.Error())
 	}
 
-	// delete book from db
-	h.DB.Delete(&book)
+	// delete product from db
+	h.DB.Delete(&product)
 
 	return c.SendStatus(fiber.StatusOK)
 }

@@ -19,7 +19,7 @@ func Init(c *config.Config) *gorm.DB {
 		log.Fatalln(err)
 	}
 
-	db.AutoMigrate(&models.Book{})
+	db.AutoMigrate(&models.Product{})
 
 	return db
 }
