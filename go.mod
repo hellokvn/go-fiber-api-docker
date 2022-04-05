@@ -1,4 +1,4 @@
-module github.com/hellokvn/go-fiber-api-docker
+module go-fiber-api-docker
 
 go 1.18
 

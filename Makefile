@@ -5,10 +5,10 @@ build:
 	go build -o bin/server cmd/main.go
 
 d.up:
-	docker-compose --env-file pkg/common/config/envs/.env up 
+	docker-compose up 
 
 d.down:
 	docker-compose down
 
 d.up.build:
-	docker-compose --env-file pkg/common/config/envs/.env --build up
+	docker-compose --build up

@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hellokvn/go-fiber-api-docker/pkg/common/config"
-	"github.com/hellokvn/go-fiber-api-docker/pkg/common/models"
+	"go-fiber-api-docker/pkg/common/config"
+	"go-fiber-api-docker/pkg/common/models"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

@@ -1,8 +1,9 @@
 package books
 
 import (
+	"go-fiber-api-docker/pkg/common/models"
+
 	"github.com/gofiber/fiber/v2"
-	"github.com/hellokvn/go-fiber-api-docker/pkg/common/models"
 )
 
 func (h handler) DeleteBook(c *fiber.Ctx) error {

@@ -3,10 +3,11 @@ package main
 import (
 	"log"
 
+	"go-fiber-api-docker/pkg/books"
+	"go-fiber-api-docker/pkg/common/config"
+	"go-fiber-api-docker/pkg/common/db"
+
 	"github.com/gofiber/fiber/v2"
-	"github.com/hellokvn/go-fiber-api-docker/pkg/books"
-	"github.com/hellokvn/go-fiber-api-docker/pkg/common/config"
-	"github.com/hellokvn/go-fiber-api-docker/pkg/common/db"
 )
 
 func main() {
